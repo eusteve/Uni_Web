@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>saint-Pauls University</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">   
 </head>
 <body>
     <section class="header">
-        <nav class="header">
+        <nav >
          <a href="http://index.html"> <img src="" alt="logo"> </a>
-         <div class="nav-links"> 
+         <div class="nav-links" id="navLinks"> 
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li> <a href="http://">HOME</a> </li>
                 <li> <a href="http://">ABOUT </a> </li>
@@ -19,9 +24,108 @@
                 <li><a href="http://">CONTENT</a> </li>
             </ul>    
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Welcome to the  world's biggest University that offers
+             both on-site and online learning for students across the world.</p>
+        <a href="#" class="hero-btn">know more </a>
+    </div>
 
     </section>
+
+    <!--Course-->
+    <section class="course">
+        <h1>Courses We offer</h1>
+        <p>we offer some of the best programs in :</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Diploma</h3>
+                <p>this is an opportunity for new minds to interact and get to learn new concepts </p>
+            </div>
+            <div class="course-col">
+                <h3>Undergraduate</h3>
+                <p>this is an opportunity for new minds to interact and get to learn new concepts </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduate</h3>
+                <p>this is an opportunity for new minds to interact and get to learn new concepts </p>
+            </div>
+        </div>
+    </section>
+<!----------campus---------->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>we have campus located across major cities countries across the  world</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="" alt="london">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+                <div class="campus-col">
+                    <img src="" alt="new_york">
+                    <div class="layer">
+                        <h3>NEW YORK</h3>
+                    </div>
+                    <div class="campus-col">
+                        <img src="" alt="washington">
+                        <div class="layer">
+                            <h3>WASHNTON</h3>
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------facilities-------------------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Some of the facilities offered at our institutions include: </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="" alt="library">
+                <h3>Largest Play ground</h3>
+                <p>this facility helps the student to make  progress and comment </p>
+            </div>
+            <div class="facilities-col">
+                <img src="" alt="basketball">
+                <h3>Tasty Healthy Food</h3>
+                <p>this facility helps the student to make  progress and comment </p>
+            </div>
+            <div class="facilities-col">
+                <img src="" alt="cafeteria">
+                <h3>World Class cafeteria</h3>
+                <p>this facility helps the student to make  progress and comment </p>
+            </div>
+        </div>
+    </section>
+
+    <!-----testimonials----------->
+    <section class="testimonials">
+        <h3>What Our Students say</h3>
+        <p>this facility helps the student to make  progress and comment </p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="some_user_1" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!---------javascript for navigation ---------->
+    <script>
+        var navLinks = getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = '0'
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
 
     
 </body>
