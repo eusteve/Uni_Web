@@ -1,2 +1,2 @@
 # Uni_Web
-A responsive web utilizing html and css 
+A responsive single page web utilizing html and css 
